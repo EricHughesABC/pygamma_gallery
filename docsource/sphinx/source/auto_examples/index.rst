@@ -20,7 +20,7 @@ List of python NMR examples that include pygamma examples
 
 .. raw:: html
 
-    <div style='clear:both'></div>
+    <div class="sphx-glr-clear"></div>
 
 
 
@@ -41,9 +41,9 @@ Introduction to Hammesley points for use in NMR simulations
 
 .. only:: html
 
-    .. figure:: /auto_examples/hammersleypoints/images/thumb/sphx_glr_plot_hamm_points_sphere_thumb.png
+ .. figure:: /auto_examples/hammersleypoints/images/thumb/sphx_glr_plot_hamm_points_sphere_thumb.png
 
-        :ref:`sphx_glr_auto_examples_hammersleypoints_plot_hamm_points_sphere.py`
+     :ref:`sphx_glr_auto_examples_hammersleypoints_plot_hamm_points_sphere.py`
 
 .. raw:: html
 
@@ -61,9 +61,9 @@ Introduction to Hammesley points for use in NMR simulations
 
 .. only:: html
 
-    .. figure:: /auto_examples/hammersleypoints/images/thumb/sphx_glr_plot_hammersley_points_thumb.png
+ .. figure:: /auto_examples/hammersleypoints/images/thumb/sphx_glr_plot_hammersley_points_thumb.png
 
-        :ref:`sphx_glr_auto_examples_hammersleypoints_plot_hammersley_points.py`
+     :ref:`sphx_glr_auto_examples_hammersleypoints_plot_hammersley_points.py`
 
 .. raw:: html
 
@@ -81,9 +81,9 @@ Introduction to Hammesley points for use in NMR simulations
 
 .. only:: html
 
-    .. figure:: /auto_examples/hammersleypoints/images/thumb/sphx_glr_plot_csa_static_hist_thumb.png
+ .. figure:: /auto_examples/hammersleypoints/images/thumb/sphx_glr_plot_csa_static_hist_thumb.png
 
-        :ref:`sphx_glr_auto_examples_hammersleypoints_plot_csa_static_hist.py`
+     :ref:`sphx_glr_auto_examples_hammersleypoints_plot_csa_static_hist.py`
 
 .. raw:: html
 
@@ -101,9 +101,9 @@ Introduction to Hammesley points for use in NMR simulations
 
 .. only:: html
 
-    .. figure:: /auto_examples/hammersleypoints/images/thumb/sphx_glr_plot_csa_static_ham_rand_thumb.png
+ .. figure:: /auto_examples/hammersleypoints/images/thumb/sphx_glr_plot_csa_static_ham_rand_thumb.png
 
-        :ref:`sphx_glr_auto_examples_hammersleypoints_plot_csa_static_ham_rand.py`
+     :ref:`sphx_glr_auto_examples_hammersleypoints_plot_csa_static_ham_rand.py`
 
 .. raw:: html
 
@@ -116,7 +116,7 @@ Introduction to Hammesley points for use in NMR simulations
    /auto_examples/hammersleypoints/plot_csa_static_ham_rand
 .. raw:: html
 
-    <div style='clear:both'></div>
+    <div class="sphx-glr-clear"></div>
 
 
 
@@ -137,9 +137,9 @@ COSY examples using pygamma
 
 .. only:: html
 
-    .. figure:: /auto_examples/pygamma_cosy/images/thumb/sphx_glr_plot_H1_1D_thumb.png
+ .. figure:: /auto_examples/pygamma_cosy/images/thumb/sphx_glr_plot_H1_1D_thumb.png
 
-        :ref:`sphx_glr_auto_examples_pygamma_cosy_plot_H1_1D.py`
+     :ref:`sphx_glr_auto_examples_pygamma_cosy_plot_H1_1D.py`
 
 .. raw:: html
 
@@ -157,9 +157,9 @@ COSY examples using pygamma
 
 .. only:: html
 
-    .. figure:: /auto_examples/pygamma_cosy/images/thumb/sphx_glr_plot_cosy1_thumb.png
+ .. figure:: /auto_examples/pygamma_cosy/images/thumb/sphx_glr_plot_cosy1_thumb.png
 
-        :ref:`sphx_glr_auto_examples_pygamma_cosy_plot_cosy1.py`
+     :ref:`sphx_glr_auto_examples_pygamma_cosy_plot_cosy1.py`
 
 .. raw:: html
 
@@ -172,7 +172,7 @@ COSY examples using pygamma
    /auto_examples/pygamma_cosy/plot_cosy1
 .. raw:: html
 
-    <div style='clear:both'></div>
+    <div class="sphx-glr-clear"></div>
 
 
 
@@ -193,9 +193,9 @@ Magic Angle Turning examples using pygamma
 
 .. only:: html
 
-    .. figure:: /auto_examples/pygamma_mat/images/thumb/sphx_glr_plot_mat_1_thumb.png
+ .. figure:: /auto_examples/pygamma_mat/images/thumb/sphx_glr_plot_mat_1_thumb.png
 
-        :ref:`sphx_glr_auto_examples_pygamma_mat_plot_mat_1.py`
+     :ref:`sphx_glr_auto_examples_pygamma_mat_plot_mat_1.py`
 
 .. raw:: html
 
@@ -208,7 +208,7 @@ Magic Angle Turning examples using pygamma
    /auto_examples/pygamma_mat/plot_mat_1
 .. raw:: html
 
-    <div style='clear:both'></div>
+    <div class="sphx-glr-clear"></div>
 
 
 
@@ -220,13 +220,13 @@ Magic Angle Turning examples using pygamma
 
   .. container:: sphx-glr-download
 
-    :download:`Download all examples in Python source code: auto_examples_python.zip </C:/Users/ERIC/Dropbox/projects/programming/2019/Python_progs/pygamma_gallery/source/auto_examples/auto_examples_python.zip>`
+    :download:`Download all examples in Python source code: auto_examples_python.zip </C:/Users/ERIC/Documents/pygamma_gallery/docsource/sphinx/source/auto_examples/auto_examples_python.zip>`
 
 
 
   .. container:: sphx-glr-download
 
-    :download:`Download all examples in Jupyter notebooks: auto_examples_jupyter.zip </C:/Users/ERIC/Dropbox/projects/programming/2019/Python_progs/pygamma_gallery/source/auto_examples/auto_examples_jupyter.zip>`
+    :download:`Download all examples in Jupyter notebooks: auto_examples_jupyter.zip </C:/Users/ERIC/Documents/pygamma_gallery/docsource/sphinx/source/auto_examples/auto_examples_jupyter.zip>`
 
 
 .. only:: html

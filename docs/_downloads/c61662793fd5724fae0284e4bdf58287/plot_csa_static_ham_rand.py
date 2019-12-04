@@ -1,6 +1,6 @@
 """
 ===========================
-Hammersley vs Random 
+Hammersley vs Random
 ===========================
 
 In this example we compare the tiling efficiency of just choosing random 
