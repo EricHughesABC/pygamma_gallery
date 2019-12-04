@@ -1,0 +1,5 @@
+SysName    (2) : CS_1     - Name of the Spin System
+NSpins     (0) : 1        - Number of Spins in the System
+Iso(0)     (2) : 1H       - Spin Isotope Type
+v(0)       (1) : 100.0    - Chemical Shifts in Hz
+Omega      (1) : 400      - Spectrometer Frequency in MHz (1H based)

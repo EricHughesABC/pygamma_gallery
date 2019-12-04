@@ -1,0 +1,8 @@
+SysName    (2) : 	- Name of the Spin System
+NSpins     (1) : 2	- Number of Spins in the System
+Iso(0)     (2) : 1H	- Spin Isotope Type
+Iso(1)     (2) : 1H	- Spin Isotope Type
+v(0)       (1) : 30	- Chemical Shift in Hz
+v(1)       (1) : -31	- Chemical Shift in Hz
+J(0,1)     (1) : 0	- Coupling Constants in Hz
+Omega      (1) : 400	- Spectrometer Frequency in MHz (1H based)
