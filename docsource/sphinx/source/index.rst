@@ -13,7 +13,7 @@ Welcome to pygamma_gallery's documentation!
    auto_examples/index
    auto_examples/hammersleypoints
    auto_examples/pygamma_cosy
-   auto_examples/pygamma_mat
+
 
 
 

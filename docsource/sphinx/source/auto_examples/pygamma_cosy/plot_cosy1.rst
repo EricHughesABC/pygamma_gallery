@@ -24,8 +24,11 @@ An example of simulating a 2D cosy experiment using pygamma. The example is tran
 
  .. code-block:: none
 
-    C:\Users\ERIC\Anaconda3\lib\site-packages\matplotlib\figure.py:2267: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
-      warnings.warn("This figure includes Axes that are not compatible "
+    C:\Users\ERIC\Documents\pygamma_gallery\docsource\sphinx\examples\pygamma_cosy\plot_cosy1.py:162: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+      plt.tight_layout()
+    C:\Users\ERIC\Documents\pygamma_gallery\docsource\sphinx\examples\pygamma_cosy\plot_cosy1.py:241: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+      plt.show()
+
 
 
 
@@ -274,7 +277,7 @@ An example of simulating a 2D cosy experiment using pygamma. The example is tran
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.327 seconds)
+   **Total running time of the script:** ( 0 minutes  1.424 seconds)
 
 
 .. _sphx_glr_download_auto_examples_pygamma_cosy_plot_cosy1.py:

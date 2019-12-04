@@ -87,6 +87,7 @@ An example of simulating a single pulse experiment using pygamma.
 
 
 
+
 Plot 1D spectrum
 
 
@@ -113,9 +114,10 @@ Plot 1D spectrum
 
 
 
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.357 seconds)
+   **Total running time of the script:** ( 0 minutes  0.303 seconds)
 
 
 .. _sphx_glr_download_auto_examples_pygamma_cosy_plot_H1_1D.py:

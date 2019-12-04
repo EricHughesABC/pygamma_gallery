@@ -59,7 +59,21 @@ References
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
 
+ Out:
+
+ .. code-block:: none
+
+    C:\Users\ERIC\Documents\pygamma_gallery\docsource\sphinx\examples\hammersleypoints\plot_csa_static_hist.py:159: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+      plt.show()
+
+
+
+
+
+
+|
 
 
 .. code-block:: default
@@ -179,7 +193,7 @@ References
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.602 seconds)
+   **Total running time of the script:** ( 0 minutes  3.959 seconds)
 
 
 .. _sphx_glr_download_auto_examples_hammersleypoints_plot_csa_static_hist.py:

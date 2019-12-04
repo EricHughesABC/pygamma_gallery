@@ -17,7 +17,21 @@ Hammersley Sphere
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
 
+ Out:
+
+ .. code-block:: none
+
+    C:\Users\ERIC\Documents\pygamma_gallery\docsource\sphinx\examples\hammersleypoints\plot_hamm_points_sphere.py:61: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+      plt.show()
+
+
+
+
+
+
+|
 
 
 .. code-block:: default
@@ -81,7 +95,7 @@ Hammersley Sphere
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.187 seconds)
+   **Total running time of the script:** ( 0 minutes  0.082 seconds)
 
 
 .. _sphx_glr_download_auto_examples_hammersleypoints_plot_hamm_points_sphere.py:

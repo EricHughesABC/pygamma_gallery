@@ -28,7 +28,21 @@ Examples of Hammersley points for tiling a 2-D plane
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
 
+ Out:
+
+ .. code-block:: none
+
+    C:\Users\ERIC\Documents\pygamma_gallery\docsource\sphinx\examples\hammersleypoints\plot_hammersley_points.py:82: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+      plt.show()
+
+
+
+
+
+
+|
 
 
 .. code-block:: default
@@ -102,7 +116,7 @@ Examples of Hammersley points for tiling a 2-D plane
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.230 seconds)
+   **Total running time of the script:** ( 0 minutes  0.174 seconds)
 
 
 .. _sphx_glr_download_auto_examples_hammersleypoints_plot_hammersley_points.py:

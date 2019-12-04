@@ -56,7 +56,8 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-html_theme = os.environ.get('SPHX_GLR_THEME', 'sphinx_rtd_theme')
+html_theme = 'nature'
+#html_theme = os.environ.get('SPHX_GLR_THEME', 'sphinx_rtd_theme')
 
 
 # Add any paths that contain custom static files (such as style sheets) here,

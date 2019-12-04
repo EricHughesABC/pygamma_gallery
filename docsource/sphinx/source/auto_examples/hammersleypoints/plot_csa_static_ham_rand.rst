@@ -26,8 +26,9 @@ numbers for :math:`\theta` and :math:`\phi` tiling angles compared to using Hamm
 
  .. code-block:: none
 
-    /home/eric/anaconda3/lib/python3.7/site-packages/matplotlib/figure.py:445: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
-      % get_backend())
+    C:\Users\ERIC\Documents\pygamma_gallery\docsource\sphinx\examples\hammersleypoints\plot_csa_static_ham_rand.py:172: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+      plt.show()
+
 
 
 
@@ -205,7 +206,7 @@ numbers for :math:`\theta` and :math:`\phi` tiling angles compared to using Hamm
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.732 seconds)
+   **Total running time of the script:** ( 0 minutes  5.205 seconds)
 
 
 .. _sphx_glr_download_auto_examples_hammersleypoints_plot_csa_static_ham_rand.py:

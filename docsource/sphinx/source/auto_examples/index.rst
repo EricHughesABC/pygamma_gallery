@@ -176,42 +176,6 @@ COSY examples using pygamma
 
 
 
-.. _sphx_glr_auto_examples_pygamma_mat:
-
-.. _pygamma_mat_examples:
-
-Pygamma MAT examples
--------------------------
-
-Magic Angle Turning examples using pygamma
-
-
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="Magic angle turning example">
-
-.. only:: html
-
- .. figure:: /auto_examples/pygamma_mat/images/thumb/sphx_glr_plot_mat_1_thumb.png
-
-     :ref:`sphx_glr_auto_examples_pygamma_mat_plot_mat_1.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /auto_examples/pygamma_mat/plot_mat_1
-.. raw:: html
-
-    <div class="sphx-glr-clear"></div>
-
-
-
 .. only :: html
 
  .. container:: sphx-glr-footer
