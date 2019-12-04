@@ -1,0 +1,384 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CSA Histogram Approach &mdash; pygamma_gallery 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Hammersley vs Random" href="plot_csa_static_ham_rand.html" />
+    <link rel="prev" title="Hammersley 2D-plane" href="plot_hammersley_points.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> pygamma_gallery
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gallery of NMR and PyGamma Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#general-examples">General examples</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#hammersley-point-examples">Hammersley Point examples</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="plot_hamm_points_sphere.html">Hammersley Sphere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plot_hammersley_points.html">Hammersley 2D-plane</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">CSA Histogram Approach</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="plot_csa_static_ham_rand.html">Hammersley vs Random</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#pygamma-cosy-examples">Pygamma Cosy examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#pygamma-mat-examples">Pygamma MAT examples</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">pygamma_gallery</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Gallery of NMR and PyGamma Examples</a> &raquo;</li>
+        
+      <li>CSA Histogram Approach</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/auto_examples/hammersleypoints/plot_csa_static_hist.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-auto-examples-hammersleypoints-plot-csa-static-hist-py"><span class="std std-ref">here</span></a> to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="csa-histogram-approach">
+<span id="sphx-glr-auto-examples-hammersleypoints-plot-csa-static-hist-py"></span><h1>CSA Histogram Approach<a class="headerlink" href="#csa-histogram-approach" title="Permalink to this headline">¶</a></h1>
+<p>Static Chemical Shift Powder Pattern using a Histogram Approach</p>
+<p>The equation for the static powder pattern for a simple chemical shift anisotropy interation is given by the following equation</p>
+<div class="math notranslate nohighlight">
+\[H = \delta_{iso} + \frac {1}{2} \delta \left ( 3 \cos^2 \theta - 1 \right ) - \delta \eta \sin^2 \theta \cos 2 \phi\]</div>
+<p>There are a number of conventions for the assignment of <span class="math notranslate nohighlight">\(\eta\)</span> and <span class="math notranslate nohighlight">\(\delta\)</span>, we have used Haeberlen’s convention.</p>
+<p>if <span class="math notranslate nohighlight">\(\sigma_{xx}\)</span>, <span class="math notranslate nohighlight">\(\sigma_{yy}\)</span> and <span class="math notranslate nohighlight">\(\sigma_{zz}\)</span> are the principal components of the chemical shielding tensor then they must have the following order.</p>
+<div class="math notranslate nohighlight">
+\[\left | \sigma_{zz} - \sigma_{iso} \right | \ge  \left | \sigma_{xx} - \sigma_{iso} \right | \ge  \left | \sigma_{yy} - \sigma_{iso} \right |\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[\sigma_{iso} = \frac {1}{3} \left ( \sigma_{xx} + \sigma_{yy} + \sigma_{zz} \right )\]</div>
+<p>and then <span class="math notranslate nohighlight">\(\delta\)</span> and <span class="math notranslate nohighlight">\(\eta\)</span> ared defined as follows</p>
+<div class="math notranslate nohighlight">
+\[\delta = \sigma_{zz} - \sigma_{iso}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\eta = \frac {\sigma_{xx}-\sigma_{yy}}{\sigma_{zz}-\sigma_{iso}}\]</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><ol class="upperalpha simple" start="21">
+<li><p>Haeberlen, In Advances in Magnetic Resonance; Suppl. 1; J. S. Waugh, Ed.; Academic Press, New York, 1976.</p></li>
+</ol>
+</li>
+</ul>
+<img alt="../../_images/sphx_glr_plot_csa_static_hist_001.png" class="sphx-glr-single-img" src="../../_images/sphx_glr_plot_csa_static_hist_001.png" />
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\ERIC\Documents\pygamma_gallery\docsource\sphinx\examples\hammersleypoints\plot_csa_static_hist.py:159: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+
+<span class="k">def</span> <span class="nf">return_Hammersley_points_array</span><span class="p">(</span> <span class="n">l</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    l is the power of x to go out to p^m</span>
+<span class="sd">    n is the maximun number of points</span>
+<span class="sd">    p is the order of the Hammersley point, 1,2,3,4,... etc</span>
+
+<span class="sd">    returns</span>
+<span class="sd">    --------</span>
+<span class="sd">    np.array of double</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">vvv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">m1</span><span class="o">=</span><span class="mi">1</span><span class="o">*</span><span class="n">m</span>
+        <span class="k">if</span> <span class="n">p</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">vvv</span><span class="p">[</span><span class="n">m</span><span class="p">]</span> <span class="o">=</span>  <span class="n">m1</span><span class="o">/</span><span class="n">n</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">v</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+                <span class="n">num</span> <span class="o">=</span> <span class="n">m1</span><span class="o">//</span><span class="n">p</span><span class="o">**</span><span class="n">j</span>
+
+                <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">m1</span> <span class="o">-=</span> <span class="n">num</span><span class="o">*</span><span class="n">p</span><span class="o">**</span><span class="n">j</span>
+                    <span class="n">v</span>  <span class="o">+=</span> <span class="n">num</span> <span class="o">/</span> <span class="p">(</span> <span class="n">p</span> <span class="o">**</span> <span class="p">(</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+
+            <span class="n">vvv</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="o">=</span><span class="n">v</span>
+
+    <span class="k">return</span><span class="p">(</span><span class="n">vvv</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">omega_cs</span><span class="p">(</span> <span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">iso_cs</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">asymm_cs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">eta_cs</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">iso_cs</span> <span class="o">+</span><span class="mf">0.5</span><span class="o">*</span> <span class="n">asymm_cs</span><span class="o">*</span><span class="p">(</span><span class="mf">3.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">eta_cs</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">phi</span> <span class="p">))),</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+
+    <span class="c1"># Define CSA powder pattern</span>
+
+    <span class="c1"># Principal components of the chemical shift shielding tensor</span>
+
+    <span class="n">s_zz</span> <span class="o">=</span> <span class="o">-</span><span class="mf">120.0</span>
+    <span class="n">s_yy</span> <span class="o">=</span> <span class="o">-</span><span class="mf">50.0</span>
+    <span class="n">s_xx</span> <span class="o">=</span>  <span class="mf">100.0</span>
+
+    <span class="c1"># Check for Haeberlens convention</span>
+
+    <span class="n">iso_cs</span> <span class="o">=</span><span class="p">(</span><span class="n">s_zz</span><span class="o">+</span><span class="n">s_yy</span><span class="o">+</span><span class="n">s_xx</span><span class="p">)</span><span class="o">/</span><span class="mf">3.</span>
+
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">s_zz</span><span class="o">-</span><span class="n">iso_cs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">s_xx</span><span class="o">-</span><span class="n">iso_cs</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">abs</span><span class="p">(</span><span class="n">s_xx</span><span class="o">-</span><span class="n">iso_cs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">s_yy</span><span class="o">-</span><span class="n">iso_cs</span><span class="p">):</span>
+        <span class="n">h_zz</span> <span class="o">=</span> <span class="n">s_zz</span>
+        <span class="n">h_yy</span> <span class="o">=</span> <span class="n">s_yy</span>
+        <span class="n">h_xx</span> <span class="o">=</span> <span class="n">s_xx</span>
+
+    <span class="k">elif</span> <span class="nb">abs</span><span class="p">(</span><span class="n">s_zz</span><span class="o">-</span><span class="n">iso_cs</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">abs</span><span class="p">(</span><span class="n">s_xx</span><span class="o">-</span><span class="n">iso_cs</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">abs</span><span class="p">(</span><span class="n">s_xx</span><span class="o">-</span><span class="n">iso_cs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">s_yy</span><span class="o">-</span><span class="n">iso_cs</span><span class="p">):</span>
+        <span class="n">h_zz</span> <span class="o">=</span> <span class="n">s_xx</span>
+        <span class="n">h_yy</span> <span class="o">=</span> <span class="n">s_yy</span>
+        <span class="n">h_xx</span> <span class="o">=</span> <span class="n">s_zz</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;problem with assignment of cs tensors&quot;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+    <span class="n">asymm_cs</span> <span class="o">=</span> <span class="n">h_zz</span><span class="o">-</span><span class="n">iso_cs</span>
+    <span class="n">eta_cs</span>   <span class="o">=</span> <span class="p">(</span><span class="n">h_xx</span><span class="o">-</span><span class="n">h_yy</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">h_zz</span><span class="o">-</span><span class="n">iso_cs</span><span class="p">)</span>
+
+    <span class="c1"># Calculate Hammersley Points and Powder pattern</span>
+    <span class="n">N_particles</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">17</span>
+
+    <span class="n">theta</span> <span class="o">=</span> <span class="n">return_Hammersley_points_array</span><span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="n">N_particles</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">phi</span>   <span class="o">=</span> <span class="n">return_Hammersley_points_array</span><span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="n">N_particles</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+    <span class="n">omega</span><span class="p">,</span> <span class="n">solid_angle</span> <span class="o">=</span> <span class="n">omega_cs</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">phi</span><span class="p">,</span> <span class="n">eta_cs</span><span class="o">=</span><span class="n">eta_cs</span><span class="p">,</span> <span class="n">iso_cs</span><span class="o">=</span><span class="n">iso_cs</span><span class="p">,</span> <span class="n">asymm_cs</span><span class="o">=</span><span class="n">asymm_cs</span><span class="p">)</span>
+
+    <span class="c1"># Plot Powder pattern and use sin(theta) solid angle weighting</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="n">solid_angle</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">250.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">250.0</span><span class="p">)</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">([])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Hz&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;$\sigma_</span><span class="si">{xx}</span><span class="s1">$&#39;</span><span class="p">,</span>
+            <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">s_xx</span><span class="o">+</span><span class="mi">5</span><span class="p">,</span> <span class="mf">0.0030</span><span class="p">),</span> <span class="n">xycoords</span><span class="o">=</span><span class="s1">&#39;data&#39;</span><span class="p">,</span>
+            <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">,</span>
+            <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">),</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;$\sigma_</span><span class="si">{yy}</span><span class="s1">$&#39;</span><span class="p">,</span>
+            <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">s_yy</span><span class="o">+</span><span class="mi">5</span><span class="p">,</span> <span class="mf">0.012</span><span class="p">),</span> <span class="n">xycoords</span><span class="o">=</span><span class="s1">&#39;data&#39;</span><span class="p">,</span>
+            <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span> <span class="mi">00</span><span class="p">),</span> <span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">,</span>
+            <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">),</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;$\sigma_</span><span class="si">{zz}</span><span class="s1">$&#39;</span><span class="p">,</span>
+            <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">s_zz</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mf">0.0044</span><span class="p">),</span> <span class="n">xycoords</span><span class="o">=</span><span class="s1">&#39;data&#39;</span><span class="p">,</span>
+            <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">,</span>
+            <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">),</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="si">{N_particles}</span><span class="s2"> Hammersley Pts CSA Calculated Histogram&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">);</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  3.911 seconds)</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-hammersleypoints-plot-csa-static-hist-py">
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/1c395c60cfac620b6207c091df175875/plot_csa_static_hist.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_csa_static_hist.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/a87801de2cab1c6d9a7dc9b78f83e106/plot_csa_static_hist.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_csa_static_hist.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="plot_csa_static_ham_rand.html" class="btn btn-neutral float-right" title="Hammersley vs Random" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="plot_hammersley_points.html" class="btn btn-neutral float-left" title="Hammersley 2D-plane" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Eric Hughes
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
